@@ -13,6 +13,7 @@ function Get-Git-Commit
 
 function Get-Git-Version
 {
+	return "1.4.1.3"
     $v = git describe --abbrev=0
     trap [Exception]
 	{ 
@@ -43,7 +44,7 @@ using System.Security;
 
 
 [assembly: ComVisibleAttribute(false)]
-[assembly: AssemblyTitleAttribute(""$title"")]
+[assembly: AssemblyTitleAttribute(""$title Custom CM Build"")]
 [assembly: AssemblyDescriptionAttribute(""$description"")]
 [assembly: AssemblyCompanyAttribute(""$company"")]
 [assembly: AssemblyProductAttribute(""$product $commit"")]
