@@ -13,7 +13,7 @@ function Get-Git-Commit
 
 function Get-Git-Version
 {
-	return "1.4.1.3"
+	return "1.4.1.4"
     $v = git describe --abbrev=0
     trap [Exception]
 	{ 
